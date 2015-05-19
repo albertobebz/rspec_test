@@ -8,7 +8,7 @@ describe 'Ruby Homework' do
     expect(n).to eq ['apples', 'avocados']
   end
 
-  fit 'select_elements_starting_with_vowel' do
+  it 'select_elements_starting_with_vowel' do
     n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
     expect(n).to eq ['omar', 'idris', 'angela']
   end
@@ -131,7 +131,7 @@ describe 'Ruby Homework' do
     expect(n).to eq 6
   end
 
-  it 'remove_capital_letters_from_string' do
+  fit 'remove_capital_letters_from_string' do
     n = remove_capital_letters_from_string 'Hello JohnDoe'
     expect(n).to eq 'ello ohnoe'
   end
