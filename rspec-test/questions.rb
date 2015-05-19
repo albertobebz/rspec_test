@@ -5,7 +5,7 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
-
+  array.map.select {|word| word.start_with?('a','e','i','o','u')}
 end
 
 # remove instances of nil (but NOT false) from an array
@@ -60,7 +60,11 @@ end
 # turn a positive integer into a negative integer. A negative integer
 # stays negative
 def make_numbers_negative(number)
-
+  if number > 0
+    number * (-1)
+  else
+    number * (1)
+  end
 end
 
 # turn an array of numbers into two arrays of numbers, one an array of 
@@ -79,7 +83,7 @@ end
 # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
 # are 2 palindromes (bob and radar), so the method should return 2
 def number_of_elements_that_are_palindromes(array)
-  
+  array.map.select.count {|name| name == name.reverse}
 end
 
 # return the shortest word in an array

@@ -8,7 +8,7 @@ describe 'Ruby Homework' do
     expect(n).to eq ['apples', 'avocados']
   end
 
-  it 'select_elements_starting_with_vowel' do
+  fit 'select_elements_starting_with_vowel' do
     n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
     expect(n).to eq ['omar', 'idris', 'angela']
   end
@@ -71,7 +71,7 @@ describe 'Ruby Homework' do
     expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   end
 
-  fit 'number_of_elements_that_are_palindromes' do
+  it 'number_of_elements_that_are_palindromes' do
     n = number_of_elements_that_are_palindromes ['bob', 'radar', 'alex', 'noon', 'banana']
     expect(n).to eq 3
   end
